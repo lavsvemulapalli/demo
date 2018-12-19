@@ -34,6 +34,8 @@ namespace DemoProject
             Thread.Sleep(2000);
             d.FindElement(By.XPath("//input[@class='login-button']")).Click();
             Thread.Sleep(2000);
+            Assert.AreEqual("Swag Labs", d.FindElement(By.XPath("//*[@id='header_container']/div[1]")).Text);
+
         }
 
         [TearDown]
